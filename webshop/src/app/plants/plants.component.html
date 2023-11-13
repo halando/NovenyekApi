@@ -1,0 +1,18 @@
+{{plants|json}}
+
+<div class="row">
+    <div *ngFor ="let noveny of plants" class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card h-100">
+            <img [src]="noveny-kepURL" class="card-img-top" [alt]="noveny.megnevezes">
+            <div class="card-body">
+              <h5 class="card-title">{{noveny.megnevezes}}</h5>
+              <p class="card-text">{{noveny.leiras}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">{{noveny.ar}} Ft</small>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control"  aria-describedby="button" id="">
+                    <button click></button>
+                </div>
+    </div>
+</div>
